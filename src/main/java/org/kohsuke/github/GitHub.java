@@ -84,6 +84,7 @@ public class GitHub {
         this.apiUrl = apiUrl;
 		this.login = login;
         this.apiToken = apiToken;
+        this.oauthAccessToken = apiToken;
         this.password = password;
 
         BASE64Encoder enc = new sun.misc.BASE64Encoder();
