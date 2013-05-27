@@ -187,14 +187,14 @@ public class AppTest extends TestCase {
         }
     }
 
-    public void testCreateCommitComment() throws Exception {
+   /* public void testCreateCommitComment() throws Exception {
         GHCommit commit = gitHub.getUser("kohsuke").getRepository("sandbox-ant").getCommit("8ae38db0ea5837313ab5f39d43a6f73de3bd9000");
         GHCommitComment c = commit.createComment("[testing](http://kohsuse.org/)");
         System.out.println(c);
         c.update("updated text");
         System.out.println(c);
         c.delete();
-    }
+    }*/
 
     public void tryHook() throws Exception {
         GHRepository r = gitHub.getMyself().getRepository("test2");
@@ -312,14 +312,14 @@ public class AppTest extends TestCase {
         System.out.printf("%d repositories in %dms\n",repos.size(),end-start);
     }
     
-    public void testOrganization() throws IOException {
+  /*  public void testOrganization() throws IOException {
         GHOrganization j = gitHub.getOrganization("jenkinsci");
         GHTeam t = j.getTeams().get("Core Developers");
 
         assertNotNull(j.getRepository("jenkins"));
 
 //        t.add(labs.getRepository("xyz"));
-    }
+    }*/
 
     public void testCommitStatus() throws Exception {
         GHRepository r = gitHub.getUser("kohsuke").getRepository("test");
